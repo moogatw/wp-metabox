@@ -1,6 +1,6 @@
 # WP Metabox v1.0
 
-> Simple WordPress Class for metabox forks from [wp-metabox-constructor-class](https://github.com/MatthewKosloski/wp-metabox-constructor-class) 
+> Simple WordPress Class for metabox forks from [wp-metabox](https://github.com/oberonlai/wp-metabox) 
 
 ## Requirements
 
