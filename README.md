@@ -157,6 +157,28 @@ $metabox->addEditor(array(
 	'desc' => 'An example description paragraph that appears below the label.'
 ));
 ```
+
+### Number
+The number fields are limited to enter the number.
+```php
+$metabox->addNumber(array(
+	'id' => 'metabox_number_field',
+	'label' => 'Number',
+	'desc' => 'An example description paragraph that appears below the label.'
+));
+```
+
+### Color
+The color fields are to select the color code.
+```php
+$metabox->addColor(array(
+	'id' => 'metabox_color_field',
+	'label' => 'Color',
+	'desc' => 'An example description paragraph that appears below the label.'
+));
+```
+
+
 ### Grid System
 The newly added grid system is used for the field width, using col-1 to 12, and the default is col-12.
 ```php
