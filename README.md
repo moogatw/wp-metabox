@@ -158,8 +158,7 @@ $metabox->addEditor(array(
 ));
 ```
 ### Grid System
-Added a grid system for column width, using col-1 to 12.
-Default is col-12.
+The newly added grid system is used for the field width, using col-1 to 12, and the default is col-12.
 ```php
 $metabox->addText(array(
 	'id' => 'metabox_text_field',
