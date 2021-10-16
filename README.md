@@ -15,7 +15,7 @@
 Run the following in your terminal to install with [Composer](https://getcomposer.org/).
 
 ```
-$ composer require oberonlai/wp-metabox
+$ composer require moogatw/wp-metabox
 ```
 
 WP Metabox [PSR-4](https://www.php-fig.org/psr/psr-4/) autoloading and can be used with the Composer's autoloader. Below is a basic example of getting started, though your setup may be different depending on how you are using Composer.
@@ -23,7 +23,7 @@ WP Metabox [PSR-4](https://www.php-fig.org/psr/psr-4/) autoloading and can be us
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-use ODS\Metabox;
+use MGD\Metabox;
 
 $options = array( ... );
 
@@ -42,7 +42,7 @@ Below is a basic example of setting up a simple custom filter with a post meta f
 require __DIR__ . '/vendor/autoload.php';
 
 // Import PostTypes.
-use ODS\Metabox;
+use MGD\Metabox;
 
 ## Usage
 
@@ -156,6 +156,31 @@ $metabox->addEditor(array(
 	'label' => 'Editor',
 	'desc' => 'An example description paragraph that appears below the label.'
 ));
+```
+### Grid System
+Added a grid system for column width, using col-1 to 12.
+Default is col-12.
+```php
+$metabox->addText(array(
+	'id' => 'metabox_text_field',
+	'label' => 'Text',
+	'desc' => 'An example description paragraph that appears below the label.'
+	'col' => '6',
+));
+
+$metabox->addRadio(
+	array(
+		'id' => 'metabox_radio_field',
+		'label' => 'Radio',
+		'desc' => 'An example description paragraph that appears below the label.',
+		'col' => '3',
+	),
+	array(
+		'key1' => 'Value One',
+		'key2' => 'Value Two'
+	)
+);
+
 ```
 
 ### Repeater
