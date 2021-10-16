@@ -1,6 +1,6 @@
 <?php
 
-namespace ODS;
+namespace MGD;
 
 class Metabox {
 
@@ -206,12 +206,14 @@ class Metabox {
 	 * @param string | null $meta
 	 */
 	public function before_field( $field, $meta = null ) {
+		
+		$field['col'] = (!empty($field['col']))?$field['col']:'12';
 
 		echo sprintf(
 			'<div class="%s %s %s">',
 			esc_attr( $this->get_block_element_class_with_namespace( 'field-container', false ) ),
 			esc_attr( $this->get_block_element_class_with_namespace( $field['type'] . '-container', false ) ),
-			esc_attr( $this->get_block_element_class_with_namespace( $field['order'], false ) )
+			esc_attr( $this->get_block_element_class_with_namespace( 'col-' .  $field['col'] , false ) )
 		);
 
 		if ( isset( $field['label'] ) ) {
@@ -284,6 +286,7 @@ class Metabox {
 			return $field;
 		}
 	}
+
 
 	public function addNumber( $args, $repeater = false ) {
 		$field = array_merge( array( 'type' => 'number' ), $args );

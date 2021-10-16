@@ -1,6 +1,6 @@
 # WP Metabox v1.0
 
-> Simple WordPress Class for metabox forks from [wp-metabox](https://github.com/oberonlai/wp-metabox) 
+> Simple WordPress Class for metabox forks from [wp-metabox-constructor-class](https://github.com/MatthewKosloski/wp-metabox-constructor-class) 
 
 ## Requirements
 
@@ -15,7 +15,7 @@
 Run the following in your terminal to install with [Composer](https://getcomposer.org/).
 
 ```
-$ composer require moogatw/wp-metabox
+$ composer require oberonlai/wp-metabox
 ```
 
 WP Metabox [PSR-4](https://www.php-fig.org/psr/psr-4/) autoloading and can be used with the Composer's autoloader. Below is a basic example of getting started, though your setup may be different depending on how you are using Composer.
@@ -42,7 +42,7 @@ Below is a basic example of setting up a simple custom filter with a post meta f
 require __DIR__ . '/vendor/autoload.php';
 
 // Import PostTypes.
-use MGD\Metabox;
+use ODS\Metabox;
 
 ## Usage
 

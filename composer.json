@@ -2,7 +2,7 @@
     "name": "moogatw/wp-metabox",
     "description": "Adding custom field for WordPress Post Type.",
     "homepage": "https://github.com/moogatw/wp-metabox",
-    "license": "TW",
+    "license": "MIT",
     "authors": [
         {
             "name": "Mooga",
