@@ -530,14 +530,19 @@ class Metabox {
 		);
 
 		$count = 0;
-		if ( count( $meta ) > 0 && is_array( $meta ) ) {
-			foreach ( $meta as $m ) {
-				$this->get_repeated_block( $field, $m, $count );
-				$count++;
+		if (is_countable($meta)) {
+			if ( count( $meta ) > 0 && is_array( $meta ) ) 
+				{
+				foreach ( $meta as $m ) {
+					$this->get_repeated_block( $field, $m, $count );
+					$count++;
+				}
 			}
-		} else {
+		}else
+		{
 			$this->get_repeated_block( $field, '', $count );
 		}
+		
 
 		echo '</div>';
 

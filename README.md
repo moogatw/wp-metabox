@@ -74,7 +74,6 @@ $metabox->addText(array(
 ));
 ```
 
-
 ### Textarea
 
 Textareas are used to store a body of text.  For a richer experience with HTML, see the [WYSIWYG](https://github.com/MatthewKosloski/wp-metabox-constructor-class#wysiwyg-editor) editor.
